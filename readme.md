@@ -13,7 +13,7 @@
 ## Установка
 
 ```bash
-go get gitlab.ae-rus.net/infra/clickhouse-dbmanager/internal/pkg/werr
+go get github.com/darow/werr
 ```
 
 ## Использование
@@ -70,4 +70,4 @@ GoLand распознаёт `cmd/main.go:85` как ссылку и перехо
 
 ## Лицензия
 
-Внутренний пакет, используйте как хотите.# werr
+Внутренний пакет, используйте как хотите.
