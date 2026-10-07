@@ -133,13 +133,6 @@ func New(message string) error {
 	}
 }
 
-// Errorf создаёт новую ошибку с форматированием.
-func Errorf(format string, args ...interface{}) error {
-	return &wrappedError{
-		levels: []level{{msg: fmt.Sprintf(format, args...), frame: callerFrame(2)}},
-	}
-}
-
 // Cause возвращает исходную ошибку (совместимо с pkg/errors.Cause).
 func Cause(err error) error {
 	for err != nil {
